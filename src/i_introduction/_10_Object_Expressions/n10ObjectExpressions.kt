@@ -18,6 +18,13 @@ fun todoTask10(): Nothing = TODO(
 
 fun task10(): List<Int> {
     val arrayList = arrayListOf(1, 5, 2)
-    Collections.sort(arrayList, todoTask10())
+
+    Collections.sort(arrayList, object : Comparator<Int> {
+        public override fun compare(o1: Int?, o2: Int?): Int {
+            return (o2 ?: Int.MIN_VALUE) - (o1 ?: Int.MAX_VALUE)
+        }
+    } )
+
+
     return arrayList
 }
