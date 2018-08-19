@@ -3,6 +3,7 @@ package iii_conventions.multiAssignemnt
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import iii_conventions.MyDate
 
 class N30DestructuringDeclarationsKtTest {
     @Test fun testIsLeapDay() {
